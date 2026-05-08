@@ -1,27 +1,12 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* ✅ Import base Tailwind + CSS variable defaults from the UI lib */
+@import "../../../../libs/ui/src/styles/globals.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ✅ Override only what's different for this app */
+/*
+:root,
+[data-theme="light"] {
+  --color-primary:       14 165 233;
+  --color-primary-light: 186 230 253;
+  --color-primary-dark:  2 132 199;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
+*/
