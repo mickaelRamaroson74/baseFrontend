@@ -42,6 +42,7 @@ export function ThemeProvider({
       root.style.setProperty(key, value);
     });
     root.setAttribute('data-theme', themeName);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [themeName]);
 
   return (
