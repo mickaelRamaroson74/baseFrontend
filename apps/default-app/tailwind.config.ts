@@ -1,11 +1,11 @@
-import type { Config } from "tailwindcss";
-import { tailwindConfig } from "../../libs/ui/tailwind.config";
+import type { Config } from 'tailwindcss';
+import { tailwindConfig } from '../../libs/ui/tailwind.config';
 
 const defaultConfig = tailwindConfig([
-  "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-  "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-  "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  "../../libs/ui/src/**/*.{js,ts,jsx,tsx,mdx}",
+  './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+  './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+  './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+  '../../libs/ui/src/**/*.{js,ts,jsx,tsx,mdx}',
 ]);
 
 const config: Config = {
